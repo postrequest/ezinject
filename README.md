@@ -1,6 +1,6 @@
 # ezinject
-Save requests from Burp Suite and interact with web shells or command injection on web applications the easy way.
-Just replace command injection with &lt;EZINJECT&gt; or something of your choosing with the '-c' flag.
+Save requests from Burp Suite and interact with web shells or command injection on web applications the easy way.  
+Just replace the command injection with &lt;EZINJECT&gt; or something of your choosing with the '-c' flag.
 
 ### Example
 ```
