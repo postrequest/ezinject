@@ -829,7 +829,7 @@ commandsToComplete =    ['Add-BitsFile',
                         '[environment]::Is64BitProcess',
                         '[environment]',
                         '$ExecutionContext.SessionState.LanguageMode',
-                        'PowerHelp',
+                        'EzHelp',
                         ]
 
 # BusyBox commands
@@ -1131,4 +1131,5 @@ commandsToCompleteBB =  ['alias',
                         'xzcat',
                         'yes',
                         'zcat',
+                        'EzHelp',
                         ]
