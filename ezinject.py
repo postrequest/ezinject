@@ -161,7 +161,7 @@ if __name__ == '__main__':
     flags.add_argument('-r', '--request', dest='requestFile', required=True, help="Burp Request file")
     flags.add_argument('-os', '--operating-system', dest='os', required=True, help="Target operating system (Windows|Linux)")
     flags.add_argument('-c', '--command', dest='command', required=False, help="Command to replace in the burp file, ensure \
-        this is unique in the request (defaults to <EZINJECT>)")
+        this is unique in the request (default: <EZINJECT>)")
     flags.add_argument('-p', '--pattern', dest='pattern', required=False, help="Specify a pattern that is located either side of\
         command output to extract eg: --pattern ZZZ (this will filter ZZZ<command output>ZZZ)")
     flags.add_argument('-first', dest='firstOccurence', required=False, action='store_true', help="If command output is appended,\

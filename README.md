@@ -1,5 +1,6 @@
 # ezinject
 Save requests from Burp Suite and interact with web shells or command injection on web applications the easy way.
+Just replace command injection with <EZINJECT> or something of your choosing with the '-c' flag.
 
 ### Example
 ```
@@ -43,7 +44,7 @@ optional arguments:
                         Target operating system (Windows|Linux)
   -c COMMAND, --command COMMAND
                         Command to replace in the burp file, ensure this is
-                        unique in the request (defaults to <EZINJECT>)
+                        unique in the request (default: <EZINJECT>)
   -p PATTERN, --pattern PATTERN
                         Specify a pattern that is located either side of
                         command output to extract eg: --pattern ZZZ (this will
