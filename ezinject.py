@@ -131,16 +131,21 @@ def interactive_shell(reqFile, tls, os, help, definedCommand, pattern, firstOccu
             recv = conn.recv(4096)
             soup = bs(recv.decode(errors='ignore'), features="html.parser").text
             postHeader = soup.find("\n\n")+2
+            # print output
             if pattern != None:
-                if not firstOccurence:
-                    print(extractString.findall(soup)[-1])
-                else:
-                    print(extractString.findall(soup)[0])
-            if VERBOSE:
-                print(soup)
+                try:
+                    if not firstOccurence:
+                        print(extractString.findall(soup)[-1])
+                    else:
+                        print(extractString.findall(soup)[0])
+                except:
+                    print("Pattern not found")
+                    sys.exit(1)
             else:
-                # remove headers
-                print(soup[postHeader:])
+                if VERBOSE:
+                    print(soup)
+                else:
+                    print(soup[postHeader:])
         if tls:
             conn.close()
         s.close()
