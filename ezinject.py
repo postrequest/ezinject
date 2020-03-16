@@ -135,8 +135,12 @@ def interactive_shell(reqFile, tls, os, help, definedCommand, pattern, firstOccu
             if pattern != None:
                 try:
                     if not firstOccurence:
+                        if VERBOSE:
+                            print(soup[:postHeader+2])
                         print(extractString.findall(soup)[-1])
                     else:
+                        if VERBOSE:
+                            print(soup[:postHeader+2])
                         print(extractString.findall(soup)[0])
                 except:
                     print("Pattern not found")
