@@ -57,7 +57,7 @@ optional arguments:
 - Tab completion 
 - (Ctrl-l or "clear" or "cls") clears the screen
 - History
-- Type "EzHelp" for Powercatch help commands (command not sent over the network)
+- Type "EzHelp" for ezinject help commands (command not sent over the network)
 
 ### TODO
 - Implement File Upload and Download functionality (Performed in segments via base64)
