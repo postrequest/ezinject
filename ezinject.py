@@ -157,7 +157,7 @@ def interactive_shell(reqFile, tls, os, help, definedCommand, pattern, firstOccu
 if __name__ == '__main__':
     flags = argparse.ArgumentParser(description="Interact with web shells or command injection on web applications.")
     flags.add_argument('-v', '--verbose', dest='verbose', required=False, action='store_true', help="Display server reponse headers")
-    flags.add_argument('-http', dest='tls', required=False, action='store_false', help="Force connecting over HTTPS")
+    flags.add_argument('-http', dest='tls', required=False, action='store_false', help="Force connecting over HTTP")
     flags.add_argument('-r', '--request', dest='requestFile', required=True, help="Burp Request file")
     flags.add_argument('-os', '--operating-system', dest='os', required=True, help="Target operating system (Windows|Linux)")
     flags.add_argument('-c', '--command', dest='command', required=False, help="Command to replace in the burp file, ensure \

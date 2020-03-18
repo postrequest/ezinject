@@ -37,7 +37,7 @@ Interact with web shells or command injection on web applications.
 optional arguments:
   -h, --help            show this help message and exit
   -v, --verbose         Display server reponse headers
-  -http                 Force connecting over HTTPS
+  -http                 Force connecting over HTTP
   -r REQUESTFILE, --request REQUESTFILE
                         Burp Request file
   -os OS, --operating-system OS
